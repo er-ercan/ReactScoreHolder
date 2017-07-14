@@ -1,0 +1,66 @@
+$softgreen:rgba(46,208,91,.50);
+$softblue:rgba(33,176,201,.50);
+$softyellow:rgba(213,211,28,.50);
+$softpurple:rgba(83,43,215,.50);
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size:62.5%;
+}
+
+
+body{
+  background: rgb(221,221,221);
+  color:#555555;
+  font-family:Helvetica, Arial,sans-serif;
+  font-size: 1.6rem;
+}
+
+h1{
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+input, button, select{
+  font-size: 1.3rem;
+}
+//Ayrı scss olarak yazamadım item ı tanımadı
+.item {
+  background: rgb(255,255,255);
+  border: 1px solid rgb(228,226,226);
+  margin-bottom: 1.3rem;
+  padding: 1.3rem;
+  border-radius: 5px;
+}
+.item__position-1{
+  background: $softgreen;
+
+}
+.item__position-2{
+  background:$softblue;
+
+}
+.item__position-3{
+  background: $softyellow;
+
+}
+.item__position-4{
+  background: $softpurple;
+
+}
+.item__message{
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
+@import "./Components/title-bar";
+@import "./Components/wrapper";
+@import "./Components/button";
+@import "./Components/player";
+@import "./Components/form";
